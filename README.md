@@ -6,7 +6,7 @@
 git config --global user.name <NAME>
 git config --global user.email <EMAIL>
 git config --global init.defaultBranch main
-git config --global credential.he1lper store
+git config --global credential.helper store
 git config --global core.editor <CODE_EDITOR>
 ```
 
@@ -15,6 +15,14 @@ git config --global core.editor <CODE_EDITOR>
 ```
 git clone <URL> <NAMEFOLDER>
 git clone <URL> --branch <BRANCH> --single-branch
+```
+
+## Init Repo
+
+```
+git init
+git status
+git add <FILE> | git add .
 ```
 
 ## Remote Repo
