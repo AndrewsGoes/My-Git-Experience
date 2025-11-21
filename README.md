@@ -31,7 +31,9 @@ git log
 
 ```
 git remote -v
-git remote add origin <REPOURL>
+git remote add origin <REPO_URL>
+git push -u origin main
+git pull
 ```
 
 ## Changes Repo
@@ -41,6 +43,18 @@ git restore <FILE>
 git commit --ammend -m "Message" | git commit --ammend
 git rest <HASH/FILE> | git reset --soft <HASH> | git reset --mixed <HASH/FILE> | git reset --hard <HASH>
 git reflog
+```
+
+## Branch Management Repo
+
+```
+git checkout -b <NEW_BRANCH> | git checkout <BRANCH>
+git branch | git branch -v
+git merge <ALT_BRANCH>
+git branch -d <DEL_BRANCH>
+git fetch origin <BRANCH>
+git diff main origin/main
+git stash | git stash list | git stash pop | git stash apply
 ```
 
 ## Commit Organization
