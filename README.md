@@ -6,14 +6,14 @@
 git config --global user.name <NAME>
 git config --global user.email <EMAIL>
 git config --global init.defaultBranch main
-git config --global credential.helper store
+git config --global credential.helper store | git config --global credential.helper cache
 git config --global core.editor <CODE_EDITOR>
 ```
 
 ## Clonar Repo
 
 ```
-git clone <URL> <NAMEFOLDER>
+git clone <URL> <NAME_FOLDER>
 git clone <URL> --branch <BRANCH> --single-branch
 ```
 
@@ -23,13 +23,24 @@ git clone <URL> --branch <BRANCH> --single-branch
 git init
 git status
 git add <FILE> | git add .
+git commit -m "Message"
+git log
 ```
 
 ## Remote Repo
 
 ```
 git remote -v
-git remote add origin <URL>
+git remote add origin <REPOURL>
+```
+
+## Changes Repo
+
+```
+git restore <FILE>
+git commit --ammend -m "Message" | git commit --ammend
+git rest <HASH/FILE> | git reset --soft <HASH> | git reset --mixed <HASH/FILE> | git reset --hard <HASH>
+git reflog
 ```
 
 ## Commit Organization
@@ -45,4 +56,12 @@ ci: Alterações em pipelines de CI/CD
 chore: Tarefas de infra, deps, scripts, configs
 build: Alterações em sistema de build
 perf: Melhorias de perfomance real
+```
+
+## Knowledge
+
+```
+.gitignore: ignora arquivos/pastas de um repositorio
+.gitkeep: reconhecer diretorio mesmo que nao tenha nenhum arquivo
+rm -rf .git: desfazer git init
 ```
