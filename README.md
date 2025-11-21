@@ -82,7 +82,6 @@ rm -rf .git: desfazer git init
 
 ## References
 
-```
 [DIO.ME REPO](https://github.com/elidianaandrade/git-github-learning-quest)
 [DIO.ME SLIDES](https://hermes.dio.me/files/assets/7ba5b596-708a-4b6f-882f-e1114b869fb5.pptx)
-```
+
